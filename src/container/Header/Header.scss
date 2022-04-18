@@ -1,10 +1,5 @@
 #home {
   position: relative;
-  background: url("../../assets/bgIMG.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: repeat;
-
   // disable the default padding styles
   .app__wrapper {
     padding: 0;
@@ -53,7 +48,6 @@
 }
 
 .app__header-badge {
-  width: 100%;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
@@ -67,7 +61,7 @@
     flex-direction: row;
     width: auto;
 
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 20px rgba(6, 151, 84, 0.5);
   }
 
   .tag-cmp {
@@ -100,40 +94,90 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  align-items: flex-start;
   height: 100%;
-  margin-left: 1rem;
 
-  div {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
+  .app__header-scroller {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
 
-    background: var(--white-color);
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    .tag-cmp {
+      padding: 1rem 2rem;
+      background: var(--white-color);
+      border-radius: 15px;
+      flex-direction: column;
+      width: auto;
 
-    img {
-      width: 60%;
-      height: 60%;
+      box-shadow: 0px 0px 20px rgba(6, 151, 84, 0.5);
+    }
+
+    p {
+      width: 100%;
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    .indicator {
+      position: relative;
+      width: 30px;
+      height: 30px;
+      margin-top: 3rem;
+
+      transform: rotate(45deg);
+      span {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        border: none;
+        border-bottom: 3px solid #fff;
+        border-right: 3px solid #fff;
+        animation: animate 1s linear infinite;
+        &:nth-child(1) {
+          top: -30px;
+          left: -30px;
+          animation-delay: 0s;
+        }
+        &:nth-child(2) {
+          top: -15px;
+          left: -15px;
+          animation-delay: 0.2s;
+        }
+        &:nth-child(3) {
+          top: 0;
+          left: 0;
+          animation-delay: 0.4s;
+        }
+        &:nth-child(4) {
+          top: 15px;
+          left: 15px;
+          animation-delay: 0.6s;
+        }
+        &:nth-child(5) {
+          top: 30px;
+          left: 30px;
+          animation-delay: 0.8s;
+        }
+      }
     }
   }
 
-  // circles with different height & width
-
-  div:nth-child(1) {
-    width: 100px;
-    height: 100px;
-  }
-
-  div:nth-child(2) {
-    margin: 1.75rem;
-    width: 150px;
-    height: 150px;
-  }
-
-  div:nth-child(3) {
-    width: 70px;
-    height: 70px;
+  @keyframes animate {
+    0% {
+      border-color: #fff;
+      transform: translate(0, 0);
+    }
+    20% {
+      border-color: #fff;
+      transform: translate(15px, 15px);
+    }
+    20.1%,
+    100% {
+      border-color: var(--secondary-color);
+    }
   }
 
   @media screen and (min-width: 2000px) {
@@ -167,7 +211,7 @@
 
 .app__header-img {
   flex: 1;
-  height: 100%;
+  height: 80%;
 
   display: flex;
   justify-content: flex-end;
@@ -175,8 +219,8 @@
   position: relative;
 
   img {
-    width: 100%;
-    object-fit: contain;
+    width: 90%;
+    object-fit: fill;
     z-index: 1;
   }
 
