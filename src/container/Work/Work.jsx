@@ -423,6 +423,84 @@ const vid14 = (
   </div>
 );
 
+const vid15 = (
+  <div className="popUp">
+    <h1>
+      Store Launch - <span>Luxury Format</span>{" "}
+    </h1>
+    <p>
+      <span className="roles">Client</span> - Parcos Luxe
+      <br /> <span className="roles">Role</span> – Senior Copywriter
+    </p>
+    <p>
+      The time I tagged a new location for experiencing luxury in Bengaluru. To
+      give a full experience of the new luxury destination aka Parcos Luxe, we
+      created a walk-through video that took the viewer through the store from
+      their point of view.
+    </p>
+
+    <video controls className="videoModal">
+      <source src={videos.storeVideo1} type="video/mp4" />
+    </video>
+    <video controls className="videoModal">
+      <source src={videos.storeVideo2} type="video/mp4" />
+    </video>
+    <video controls className="videoModal">
+      <source src={videos.storeVideo3} type="video/mp4" />
+    </video>
+    <video controls className="videoModal">
+      <source src={videos.storeVideo4} type="video/mp4" />
+    </video>
+    <video controls className="videoModal">
+      <source src={videos.storeVideo5} type="video/mp4" />
+    </video>
+  </div>
+);
+
+const vid16 = (
+  <div className="popUp">
+    <h1>
+      Parcos - <span>Gold Rush Sale IP</span>{" "}
+    </h1>
+    <p>
+      <span className="roles">Client</span> - Parcos
+      <br /> <span className="roles">Role</span> – Senior Copywriter
+    </p>
+    <p>
+      The time I worked on creating the first-ever sale IP for Parcos on tighter
+      budgets and even tighter timelines. <br />
+      The Bolt - We wanted to have an icon that connects with the consumers and
+      can be used to signify the sale without explicitly mentioning it. The bolt
+      symbolised lightening fast deals + flashing deals and was used throughout
+      MARCOM.
+    </p>
+
+    <img src={images.sale1} alt="sale1" />
+
+    <video controls className="videoModal">
+      <source src={videos.saleVideo1} type="video/mp4" />
+    </video>
+    <video controls className="videoModal">
+      <source src={videos.saleVideo2} type="video/mp4" />
+    </video>
+    <video controls className="videoModal">
+      <source src={videos.saleVideo3} type="video/mp4" />
+    </video>
+    <video controls className="videoModal">
+      <source src={videos.saleVideo4} type="video/mp4" />
+    </video>
+    <video controls className="videoModal">
+      <source src={videos.saleVideo5} type="video/mp4" />
+    </video>
+    <video controls className="videoModal">
+      <source src={videos.saleVideo6} type="video/mp4" />
+    </video>
+    <video controls className="videoModal">
+      <source src={videos.saleVideo7} type="video/mp4" />
+    </video>
+  </div>
+);
+
 const Work = () => {
   const [openModal1, setOpenModal1] = useState(false);
   const [openModal2, setOpenModal2] = useState(false);
@@ -437,6 +515,8 @@ const Work = () => {
   const [openModal12, setOpenModal12] = useState(false);
   const [openModal13, setOpenModal13] = useState(false);
   const [openModal14, setOpenModal14] = useState(false);
+  const [openModal15, setOpenModal15] = useState(false);
+  const [openModal16, setOpenModal16] = useState(false);
 
   return (
     <>
@@ -450,6 +530,20 @@ const Work = () => {
         className="app__work-portfolio"
       >
         {[
+          {
+            video: images.sale,
+            title: "Parcos Sale IP",
+            child: vid16,
+            state: openModal16,
+            setState: setOpenModal16,
+          },
+          {
+            video: videos.store,
+            title: "Luxe Store Launch",
+            child: vid15,
+            state: openModal15,
+            setState: setOpenModal15,
+          },
           {
             video: videos.kol,
             title: "KOL Campaigns",

@@ -17,6 +17,19 @@ import kol from "../videos/kol.mp4";
 import lipstickVideo1 from "../videos/lipstickVideo1.mp4";
 import lipstickVideo2 from "../videos/lipstickVideo2.mp4";
 import lipstick from "../videos/lipstick.mp4";
+import store from "../videos/store.mp4";
+import storeVideo1 from "../videos/storeVideo1.mp4";
+import storeVideo2 from "../videos/storeVideo2.mp4";
+import storeVideo3 from "../videos/storeVideo3.mp4";
+import storeVideo4 from "../videos/storeVideo4.mp4";
+import storeVideo5 from "../videos/storeVideo5.mp4";
+import saleVideo1 from "../videos/saleVideo1.mp4";
+import saleVideo2 from "../videos/saleVideo2.mp4";
+import saleVideo3 from "../videos/saleVideo3.mp4";
+import saleVideo4 from "../videos/saleVideo4.mp4";
+import saleVideo5 from "../videos/saleVideo5.mp4";
+import saleVideo6 from "../videos/saleVideo6.mp4";
+import saleVideo7 from "../videos/saleVideo7.mp4";
 
 export default {
   video1,
@@ -38,4 +51,17 @@ export default {
   lipstick,
   lipstickVideo1,
   lipstickVideo2,
+  store,
+  storeVideo1,
+  storeVideo2,
+  storeVideo3,
+  storeVideo4,
+  storeVideo5,
+  saleVideo1,
+  saleVideo2,
+  saleVideo3,
+  saleVideo4,
+  saleVideo5,
+  saleVideo6,
+  saleVideo7,
 };

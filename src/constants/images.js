@@ -30,6 +30,8 @@ import kol3 from "../assets/kol3.png";
 import kol4 from "../assets/kol4.png";
 import lipstick1 from "../assets/lipstick1.png";
 import lipstick2 from "../assets/lipstick2.png";
+import sale from "../assets/sale.jpeg";
+import sale1 from "../assets/sale1.png";
 
 export default {
   logo,
@@ -63,4 +65,6 @@ export default {
   kol4,
   lipstick1,
   lipstick2,
+  sale,
+  sale1,
 };
