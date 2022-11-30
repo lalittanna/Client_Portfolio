@@ -23,6 +23,7 @@ import storeVideo2 from "../videos/storeVideo2.mp4";
 import storeVideo3 from "../videos/storeVideo3.mp4";
 import storeVideo4 from "../videos/storeVideo4.mp4";
 import storeVideo5 from "../videos/storeVideo5.mp4";
+import sale from "../videos/sale.mp4";
 import saleVideo1 from "../videos/saleVideo1.mp4";
 import saleVideo2 from "../videos/saleVideo2.mp4";
 import saleVideo3 from "../videos/saleVideo3.mp4";
@@ -57,6 +58,7 @@ export default {
   storeVideo3,
   storeVideo4,
   storeVideo5,
+  sale,
   saleVideo1,
   saleVideo2,
   saleVideo3,

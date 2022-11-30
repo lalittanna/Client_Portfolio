@@ -531,7 +531,7 @@ const Work = () => {
       >
         {[
           {
-            video: images.sale,
+            video: videos.sale,
             title: "Parcos Sale IP",
             child: vid16,
             state: openModal16,
