@@ -11,6 +11,12 @@ import video10 from "../videos/video10.mp4";
 import video11 from "../videos/video11.mp4";
 import video12 from "../videos/video12.mp4";
 import AsianPaints from "../videos/AsianPaints.mp4";
+import kolVideo1 from "../videos/kolVideo1.mp4";
+import kolVideo2 from "../videos/kolVideo2.mp4";
+import kol from "../videos/kol.mp4";
+import lipstickVideo1 from "../videos/lipstickVideo1.mp4";
+import lipstickVideo2 from "../videos/lipstickVideo2.mp4";
+import lipstick from "../videos/lipstick.mp4";
 
 export default {
   video1,
@@ -26,4 +32,10 @@ export default {
   video11,
   video12,
   AsianPaints,
+  kolVideo1,
+  kolVideo2,
+  kol,
+  lipstick,
+  lipstickVideo1,
+  lipstickVideo2,
 };

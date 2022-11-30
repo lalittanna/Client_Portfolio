@@ -24,6 +24,12 @@ import kaya4 from "../assets/Kaya4.png";
 import kaya5 from "../assets/Kaya5.png";
 import kaya6 from "../assets/Kaya6.png";
 import kaya7 from "../assets/Kaya7.png";
+import kol1 from "../assets/kol1.png";
+import kol2 from "../assets/kol2.png";
+import kol3 from "../assets/kol3.png";
+import kol4 from "../assets/kol4.png";
+import lipstick1 from "../assets/lipstick1.png";
+import lipstick2 from "../assets/lipstick2.png";
 
 export default {
   logo,
@@ -51,4 +57,10 @@ export default {
   kaya5,
   kaya6,
   kaya7,
+  kol1,
+  kol2,
+  kol3,
+  kol4,
+  lipstick1,
+  lipstick2,
 };

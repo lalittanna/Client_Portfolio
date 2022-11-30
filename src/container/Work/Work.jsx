@@ -360,6 +360,69 @@ const vid12 = (
   </div>
 );
 
+const vid13 = (
+  <div className="popUp">
+    <h1>
+      Baccarose Perfumes & Beauty Products - <span>KOL Campaigns</span>{" "}
+    </h1>
+    <p>
+      <span className="roles">Client</span> - Gucci, Paco Rabanne, Narciso
+      Rodriguez, Montblanc, Boss, Jimmy Choo, Kate Spade
+      <br /> <span className="roles">Role</span> – Senior Copywriter
+    </p>
+    <p>
+      The time I got to max out on my imagination while executing KOL campaigns
+      for luxury brands with the objective of promoting their newest juice. It
+      involved curating influencers who were fit for the brand and
+      conceptualizing the mood boards.
+    </p>
+
+    <img src={images.kol1} alt="kol1" />
+    <img src={images.kol2} alt="kol2" />
+    <img src={images.kol3} alt="kol3" />
+    <img src={images.kol4} alt="kol4" />
+
+    <video controls className="videoModal">
+      <source src={videos.kolVideo1} type="video/mp4" />
+    </video>
+    <video controls className="videoModal">
+      <source src={videos.kolVideo2} type="video/mp4" />
+    </video>
+  </div>
+);
+
+const vid14 = (
+  <div className="popUp">
+    <h1>
+      Parcos - <span>National Lipstick Day Campaign</span>{" "}
+    </h1>
+    <p>
+      <span className="roles">Client</span> - Parcos
+      <br /> <span className="roles">Role</span> – Senior Copywriter
+    </p>
+    <p>
+      The time my google search history was filled with lipstick
+      recommendations. Three influencers created a vintage look with a modern
+      twist. Their looks contradict the copy inspired by vintage lipstick ads,
+      thus, making a bold, yet simple, statement. We wanted to establish a
+      connection with these influencers and demonstrate to our audience that
+      each colour has a distinct mood and shouldn't be stereotypically worn.
+      During the period of the campaign overall traffic increased by 47% and
+      sessions by 41% compared to the previous 10 days’ traffic.
+    </p>
+
+    <img src={images.lipstick1} alt="lipstick1" />
+    <img src={images.lipstick2} alt="lipstick2" />
+
+    <video controls className="videoModal">
+      <source src={videos.lipstickVideo1} type="video/mp4" />
+    </video>
+    <video controls className="videoModal">
+      <source src={videos.lipstickVideo2} type="video/mp4" />
+    </video>
+  </div>
+);
+
 const Work = () => {
   const [openModal1, setOpenModal1] = useState(false);
   const [openModal2, setOpenModal2] = useState(false);
@@ -372,6 +435,8 @@ const Work = () => {
   const [openModal10, setOpenModal10] = useState(false);
   const [openModal11, setOpenModal11] = useState(false);
   const [openModal12, setOpenModal12] = useState(false);
+  const [openModal13, setOpenModal13] = useState(false);
+  const [openModal14, setOpenModal14] = useState(false);
 
   return (
     <>
@@ -385,6 +450,20 @@ const Work = () => {
         className="app__work-portfolio"
       >
         {[
+          {
+            video: videos.kol,
+            title: "KOL Campaigns",
+            child: vid13,
+            state: openModal13,
+            setState: setOpenModal13,
+          },
+          {
+            video: videos.lipstick,
+            title: "Lipstick Day Campaign",
+            child: vid14,
+            state: openModal14,
+            setState: setOpenModal14,
+          },
           {
             video: videos.video4,
             title: "Kaya Product Videos",
