@@ -32,6 +32,7 @@ import lipstick1 from "../assets/lipstick1.png";
 import lipstick2 from "../assets/lipstick2.png";
 import sale from "../assets/sale.jpeg";
 import sale1 from "../assets/sale1.png";
+import influencer1 from "../assets/influencer1.png";
 
 export default {
   logo,
@@ -67,4 +68,5 @@ export default {
   lipstick2,
   sale,
   sale1,
+  influencer1,
 };

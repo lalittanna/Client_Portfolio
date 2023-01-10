@@ -31,6 +31,8 @@ import saleVideo4 from "../videos/saleVideo4.mp4";
 import saleVideo5 from "../videos/saleVideo5.mp4";
 import saleVideo6 from "../videos/saleVideo6.mp4";
 import saleVideo7 from "../videos/saleVideo7.mp4";
+import influencerVideo1 from "../videos/influencerVideo1.mp4";
+import influencerVideo2 from "../videos/influencerVideo2.mp4";
 
 export default {
   video1,
@@ -66,4 +68,6 @@ export default {
   saleVideo5,
   saleVideo6,
   saleVideo7,
+  influencerVideo1,
+  influencerVideo2,
 };

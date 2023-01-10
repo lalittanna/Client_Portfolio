@@ -350,7 +350,7 @@ const vid12 = (
     </p>
     <p>
       The time I was Shakespeare-ish and impressed the client and myself with
-      some kickass valentine’s day copy.
+      some kickass Valentine’s Day copy.
     </p>
 
     <img src={images.NM1} alt="NM1" />
@@ -363,7 +363,7 @@ const vid12 = (
 const vid13 = (
   <div className="popUp">
     <h1>
-      Baccarose Perfumes & Beauty Products - <span>KOL Campaigns</span>{" "}
+      Baccarose Perfumes & Beauty Products - <span>Influencer Campaigns</span>{" "}
     </h1>
     <p>
       <span className="roles">Client</span> - Gucci, Paco Rabanne, Narciso
@@ -376,6 +376,14 @@ const vid13 = (
       involved curating influencers who were fit for the brand and
       conceptualizing the mood boards.
     </p>
+
+    <img src={images.influencer1} alt="influencer1" />
+    <video controls className="videoModal">
+      <source src={videos.influencerVideo1} type="video/mp4" />
+    </video>
+    <video controls className="videoModal">
+      <source src={videos.influencerVideo2} type="video/mp4" />
+    </video>
 
     <img src={images.kol1} alt="kol1" />
     <img src={images.kol2} alt="kol2" />
@@ -398,7 +406,7 @@ const vid14 = (
     </h1>
     <p>
       <span className="roles">Client</span> - Parcos
-      <br /> <span className="roles">Role</span> – Senior Copywriter
+      <br /> <span className="roles">Role</span> – Senior Copywriter, Strategist
     </p>
     <p>
       The time my google search history was filled with lipstick
@@ -426,11 +434,11 @@ const vid14 = (
 const vid15 = (
   <div className="popUp">
     <h1>
-      Store Launch - <span>Luxury Format</span>{" "}
+      Parcos Store Launch - <span>Luxury Format</span>{" "}
     </h1>
     <p>
       <span className="roles">Client</span> - Parcos Luxe
-      <br /> <span className="roles">Role</span> – Senior Copywriter
+      <br /> <span className="roles">Role</span> – Senior Copywriter, Strategist
     </p>
     <p>
       The time I tagged a new location for experiencing luxury in Bengaluru. To
@@ -464,7 +472,7 @@ const vid16 = (
     </h1>
     <p>
       <span className="roles">Client</span> - Parcos
-      <br /> <span className="roles">Role</span> – Senior Copywriter
+      <br /> <span className="roles">Role</span> – Senior Copywriter, Strategist
     </p>
     <p>
       The time I worked on creating the first-ever sale IP for Parcos on tighter
@@ -532,21 +540,21 @@ const Work = () => {
         {[
           {
             video: videos.sale,
-            title: "Parcos Sale IP",
+            title: "Parcos Gold Rush Sale IP",
             child: vid16,
             state: openModal16,
             setState: setOpenModal16,
           },
           {
             video: videos.store,
-            title: "Luxe Store Launch",
+            title: "Parcos Luxe Store Launch",
             child: vid15,
             state: openModal15,
             setState: setOpenModal15,
           },
           {
             video: videos.kol,
-            title: "KOL Campaigns",
+            title: "Influencer Campaigns",
             child: vid13,
             state: openModal13,
             setState: setOpenModal13,
